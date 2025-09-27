@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="Pix"    
+           fetch="https://github.com/pix106" />
+  
+  <remote  name="32"
+           fetch="https://https://github.com/thirty-two-at-32" />
+
+<!-- Kernel -->
+<project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_lavender-4.19" remote="32" clone-depth="1" revision="southwest" />
+
+<!-- Hardware -->
+<remove-project path="hardware/qcom-caf/sdm660/audio" />
+<remove-project path="hardware/qcom-caf/sdm660/display" />
+<project path="hardware/qcom-caf/sdm660/audio" name="pix106/android_hardware_qcom-caf_audio" remote="github" revision="lineage-22.2-caf-sdm660" />
+<project path="hardware/qcom-caf/sdm660/display" name="pix106/android_hardware_qcom-caf_display" remote="github" revision="lineage-22.2-caf-sdm660" />
+<project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="github" revision="lineage-23.0" />
+  
+<!-- Device -->
+<project path="device/xiaomi/platina" name="android_device_xiaomi_platina" remote="32"  clone-depth="1" revision="lunaris-3.x"/>
+<project path="device/xiaomi/sdm660-common" name="android_device_xiaomi_sdm660-common" remote="32" clone-depth="1" revision="lunaris-3.x" />
+
+<!-- Vendor -->
+<project path="vendor/xiaomi/platina" name="android_vendor_xiaomi_platina" remote="32"  clone-depth="1" revision="bka-4.19-xyz" />
+<project path="vendor/xiaomi/sdm660-common" name="android_vendor_xiaomi_sdm660-common" remote="32" clone-depth="1" revision="bka-4.19-xyz" />
+
+</manifest>
