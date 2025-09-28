@@ -16,12 +16,14 @@
 <!-- Hardware -->
 <remove-project path="hardware/qcom-caf/sdm660/audio" />
 <remove-project path="hardware/qcom-caf/sdm660/display" />
+<remove-project path="vendor/qcom/opensource/audio-hal/st-hal" />
 <project path="hardware/qcom-caf/sdm660/audio" name="pix106/android_hardware_qcom-caf_audio" remote="github" revision="lineage-22.2-caf-sdm660" />
 <project path="hardware/qcom-caf/sdm660/display" name="pix106/android_hardware_qcom-caf_display" remote="github" revision="lineage-22.2-caf-sdm660" />
 <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="github" revision="lineage-23.0" />
+<project path="vendor/qcom/opensource/audio-hal/st-hal" name="android_vendor_qcom_opensource_audio-hal_st-hal" remote="32" revision="lineage-23.0" />
   
 <!-- Device -->
-<project path="device/xiaomi/platina" name="android_device_xiaomi_platina" remote="32"  clone-depth="1" revision="lunaris-3.x"/>
+<project path="device/xiaomi/platina" name="android_device_xiaomi_platina" remote="32"  clone-depth="1" revision="axion-2.x"/>
 <project path="device/xiaomi/sdm660-common" name="android_device_xiaomi_sdm660-common" remote="32" clone-depth="1" revision="lunaris-3.x" />
 
 <!-- Vendor -->
